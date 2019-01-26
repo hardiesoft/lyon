@@ -1375,19 +1375,15 @@ fn test_traversal_push_sorted() {
     tx.push(point(0.0, 0.0));
 
     tx.sort();
-    println!("1");
     tx.push_sorted(point(1.5, 0.0));
     tx.assert_sorted();
 
-    println!("2");
     tx.push_sorted(point(2.5, 0.0));
     tx.assert_sorted();
 
-    println!("3");
     tx.push_sorted(point(2.5, 0.0));
     tx.assert_sorted();
 
-    println!("4");
     tx.push_sorted(point(6.5, 0.0));
     tx.assert_sorted();
 }
